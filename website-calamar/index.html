@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>juego del calamar</title>
+</head>
+<body>
+   <section class="class banner">
+       <header>
+           <div class="toggle"></div>
+           <a href="#" class="logo"><img src="logo.png" alt=""></a>
+       </header>
+       <div class="content">
+           <img src="text.png" class="textimg">
+           <p>cientos de jugadores sin dinero aceptan una extraña invitación para competir en juegos infantiles En su interior les espera un premio tentador, con apuestas mortales</p>
+           <a href="#" class="btn"><ion-icon name="play-circle-outline"></ion-icon>ver trailer</a>
+       </div>
+
+       <div class="clip">
+           <div class="clipBox">
+               <img src="img1.jpg">
+               <ion-icon name="play-circle-outline"></ion-icon>
+           </div>
+          
+            <div class="clipBox">
+                <img src="img2.jpg">
+                <ion-icon name="play-circle-outline"></ion-icon>
+            </div>
+       </div>
+       <ul class="socialIcon">
+           <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+           <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+           <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+       </ul>
+   </section> 
+   <ul class="navigation">
+       <li><a href="#">Inicio</a></li>
+       <li><a href="#">Acerca De</a></li>
+       <li><a href="#">Nuestros productos</a></li>
+       <li><a href="#">tienda</a></li>
+       <li><a href="#">contacto</a></li>
+   </ul>
+
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https:unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+   <script>
+       let menuToggle = document.querySelector('.toggle');
+       let navigation = document.querySelector('.navigation');
+       menuToggle.onclick = function() {
+           menuToggle.classList.toggle('active');
+           navigation.classList.toggle('active');
+
+       }
+   </script>
+</body>
+</html>
